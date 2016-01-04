@@ -2,7 +2,8 @@
 
 function titleCase($string)
 {
-    $word_splitters = array(' ', '-', "O'", "L'", "D'", 'St.', 'Mc');
+    $string = trim($string);
+    $word_splitters = array(' ', '-', "'", 'St.', 'Mc', 'De', 'Ms.');
     $lowercase_exceptions = array('the', 'van', 'den', 'von', 'und', 'der', 'de', 'da', 'of', 'and', "l'", "d'");
     $uppercase_exceptions = array('III', 'IV', 'VI', 'VII', 'VIII', 'IX');
 
